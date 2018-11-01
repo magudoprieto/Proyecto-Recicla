@@ -1,0 +1,17 @@
+.cabeceropersonalizado{
+	background-color: #79bd8f;
+	color: white;
+}
+
+.cabeceropersonalizado a{
+	background-color: #79bd8f;
+	color: white;
+}
+
+.posicionfixed{
+	position: fixed;
+	width: 100%;
+}
+
+
+
