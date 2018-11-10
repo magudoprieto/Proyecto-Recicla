@@ -1,6 +1,7 @@
 .cabeceropersonalizado{
 	background-color: #4FB99F;
 	color: white;
+	border-bottom:2px solid black;
 }
 
 .cabeceropersonalizado a{
@@ -8,7 +9,4 @@
 	color: white;
 }
 
-.posicionfixed{
-	position: fixed;
-	width: 100%;
-}
+
