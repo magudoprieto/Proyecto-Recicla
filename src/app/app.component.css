@@ -1,2 +1,8 @@
 
+.cuerpo{
+	height:100vh;
+}
 
+.cuerpo .hero{
+	width: 100%;
+}

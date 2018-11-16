@@ -1,15 +1,2 @@
-.cuerpo{
-	height:100vh;
-}
 
-.cuerpo div{
-	float: left;
-}
 
-.cuerpo .hero{
-	width: 80%;
-}
-
-.cuerpo .panelreg{
-	width: 20%;
-}
