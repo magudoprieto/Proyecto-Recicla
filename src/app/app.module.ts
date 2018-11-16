@@ -8,6 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OpenComponent } from './open/open.component';
 import { PanelregComponent } from './panelreg/panelreg.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PanelregComponent } from './panelreg/panelreg.component';
     HeaderComponent,
     HeroComponent,
     OpenComponent,
-    PanelregComponent
+    PanelregComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
