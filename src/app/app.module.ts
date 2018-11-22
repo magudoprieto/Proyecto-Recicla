@@ -10,6 +10,9 @@ import { OpenComponent } from './open/open.component';
 import { PanelregComponent } from './panelreg/panelreg.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormulariologinComponent } from './formulariologin/formulariologin.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ReciclaComponent } from './recicla/recicla.component';
+import { ProyectoComponent } from './proyecto/proyecto.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { FormulariologinComponent } from './formulariologin/formulariologin.comp
     OpenComponent,
     PanelregComponent,
     FooterComponent,
-    FormulariologinComponent
+    FormulariologinComponent,
+    ProfileComponent,
+    ReciclaComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,
