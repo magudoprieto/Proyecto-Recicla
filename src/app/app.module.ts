@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { OpenComponent } from './open/open.component';
 import { PanelregComponent } from './panelreg/panelreg.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormulariologinComponent } from './formulariologin/formulariologin.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     HeroComponent,
     OpenComponent,
     PanelregComponent,
-    FooterComponent
+    FooterComponent,
+    FormulariologinComponent
   ],
   imports: [
     BrowserModule,
