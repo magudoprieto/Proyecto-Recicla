@@ -1,0 +1,9 @@
+.container-fluid{
+    background-color: lightblue;
+}
+
+.container{
+    background-color: white;
+    box-shadow: 1px 1px grey;
+}
+
