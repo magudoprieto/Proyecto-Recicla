@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: '', component: HeroComponent},
   {path: 'home', component: HeroComponent},
   {path: 'open', component: OpenComponent, children:[
-    {path:'formulariologin',component:FormulariologinComponent},
+    {path:'',component:FormulariologinComponent},
     {path: 'profile', component:ProfileComponent}
   ]},
   {path: 'recicla', component:ReciclaComponent},
