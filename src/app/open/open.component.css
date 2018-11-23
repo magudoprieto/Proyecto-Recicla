@@ -1,2 +1,42 @@
+.container-fluid{
+    background-color: lightblue;
+}
 
+.container{
+    background-color: white;
+    box-shadow: 1px 1px grey;
+}
+
+.formulariologin{
+    width: 80%;
+    background-color: grey;
+    height: 50px;
+    margin:0px auto;
+    
+}
+
+h3{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.presentacion{
+    padding-left:20%;
+    padding-right: 20%;
+
+}
+
+.carta{
+    float:left;
+    padding:30px;
+    text-align: center;
+}
+
+.row:after{
+    clear: both;
+}
+
+img{
+    border-radius: 10px;
+}
 
