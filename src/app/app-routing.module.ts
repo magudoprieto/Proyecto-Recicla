@@ -6,6 +6,7 @@ import { FormulariologinComponent } from './formulariologin/formulariologin.comp
 import { ProfileComponent } from './profile/profile.component';
 import { ReciclaComponent } from './recicla/recicla.component';
 import { ProyectoComponent } from './proyecto/proyecto.component';
+import { RegisterComponent } from './register/register.component';
 
 //This is my case 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
     {path: 'profile', component:ProfileComponent}
   ]},
   {path: 'recicla', component:ReciclaComponent},
-  {path: 'proyecto', component:ProyectoComponent}
+  {path: 'proyecto', component:ProyectoComponent},
+  {path: 'registro', component:RegisterComponent}
 ];
 
 @NgModule({

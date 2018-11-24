@@ -13,6 +13,7 @@ import { FormulariologinComponent } from './formulariologin/formulariologin.comp
 import { ProfileComponent } from './profile/profile.component';
 import { ReciclaComponent } from './recicla/recicla.component';
 import { ProyectoComponent } from './proyecto/proyecto.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ProyectoComponent } from './proyecto/proyecto.component';
     FormulariologinComponent,
     ProfileComponent,
     ReciclaComponent,
-    ProyectoComponent
+    ProyectoComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
