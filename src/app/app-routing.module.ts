@@ -7,11 +7,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReciclaComponent } from './recicla/recicla.component';
 import { ProyectoComponent } from './proyecto/proyecto.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 
 //This is my case 
 const routes: Routes = [
-  {path: '', component: HeroComponent},
-  {path: 'home', component: HeroComponent},
+  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'open', component: OpenComponent, children:[
     {path:'',component:FormulariologinComponent},
     {path: 'profile', component:ProfileComponent}

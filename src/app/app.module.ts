@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReciclaComponent } from './recicla/recicla.component';
 import { ProyectoComponent } from './proyecto/proyecto.component';
 import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { RegisterComponent } from './register/register.component';
     ProfileComponent,
     ReciclaComponent,
     ProyectoComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
