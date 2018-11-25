@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-formulariologin',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulariologinComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup
+
+  constructor() {
+    this.form = new FormGroup({
+      usuario: new FormControl(),
+      contrasena: new FormControl()
+    })
+   }
 
   ngOnInit() {
   }
+
+  inicioSesion(data) {
+    console.log(data);
+    
+  }
+
+  
 
 }
