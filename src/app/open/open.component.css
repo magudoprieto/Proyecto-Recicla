@@ -7,12 +7,8 @@
     box-shadow: 1px 1px grey;
 }
 
-.formulariologin{
-    width: 80%;
-    background-color: grey;
-    height: 50px;
-    margin:0px auto;
-    
+.bg-personal{
+    background-color: #112F41
 }
 
 h3{
