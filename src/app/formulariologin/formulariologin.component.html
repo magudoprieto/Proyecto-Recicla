@@ -11,8 +11,12 @@
       <label class="text-light" for="exampleDropdownFormPassword1">Contraseña</label>
       <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña" formControlName="contrasena">
     </div>
-    <button type="submit" class="btn btn-outline-light ml-3">Entrar</button>
+    <div class="col-6">
+      <button type="submit" class="btn btn-outline-light ">Entrar</button>
+    </div>
+    <div class="col-6">
+      <p class="text-info text-right">¿Aún no tienes cuenta? <u><a class="text-info" [routerLink]="['../registro']">¡Registrate!</a></u></p>
+      
+    </div>
   </form>
-  <div class="dropdown-divider"></div>
-  <a class="m-4 text-light" href="#">Registrate</a>
 </div>
