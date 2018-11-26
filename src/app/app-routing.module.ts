@@ -17,7 +17,6 @@ const routes: Routes = [
     {path:'',component:FormulariologinComponent},
     {path: 'profile', component:ProfileComponent}
   ]},
-  {path: 'recicla', component:ReciclaComponent},
   {path: 'proyecto', component:ProyectoComponent},
   {path: 'registro', component:RegisterComponent}
 ];
