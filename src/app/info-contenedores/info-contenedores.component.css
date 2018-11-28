@@ -6,7 +6,7 @@
     100%{ margin-left: 200px }
   }
    
-.size-camion { animation: miAnimación 10s cubic-bezier(0, 0, 1, 1) infinite normal both;}
+.size-camion { animation: miAnimación 8s cubic-bezier(0, 0, 1, 1) infinite normal both;}
 .size-camion{
     width: 150px;
     position: absolute;
