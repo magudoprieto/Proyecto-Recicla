@@ -17,6 +17,9 @@ import { ProyectoComponent } from './proyecto/proyecto.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { InfoContenedoresComponent } from './info-contenedores/info-contenedores.component';
+import { ContenedoresComponent } from './info-contenedores/contenedores/contenedores.component';
+import { PrincipalComponent } from './info-contenedores/principal/principal.component';
+import { InformacionComponent } from './info-contenedores/informacion/informacion.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { InfoContenedoresComponent } from './info-contenedores/info-contenedores
     ProyectoComponent,
     RegisterComponent,
     HomeComponent,
-    InfoContenedoresComponent
+    InfoContenedoresComponent,
+    ContenedoresComponent,
+    PrincipalComponent,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,
