@@ -1,0 +1,16 @@
+.ciudad{
+    position: relative;
+}
+@keyframes miAnimación {
+    0% { margin-left: -1350px}
+    100%{ margin-left: 200px }
+  }
+   
+.size-camion { animation: miAnimación 10s cubic-bezier(0, 0, 1, 1) infinite normal both;}
+.size-camion{
+    width: 150px;
+    position: absolute;
+    margin-left: -900px;
+    margin-top: 150px;
+    transform: translate(30px, 7px);
+}
