@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
 
         contrasena: new FormControl('',[Validators.required,Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/)]),
         nombre: new FormControl('',[Validators.required,Validators.maxLength(40),Validators.minLength(3)]),
+        edad: new FormControl('',[Validators.required]),
         municipio: new FormControl(),
         provincia: new FormControl(),
         postal: new FormControl('',[Validators.minLength(5),Validators.maxLength(5)])
