@@ -14,3 +14,20 @@
     margin-top: 13%;
     transform: translate(30px, 7px);
 }
+
+@media only screen and (max-width: 1000px) {
+    .size-camion{
+        margin-top: 10%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .size-camion{
+        margin-top: 8%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .size-camion{
+        width: 100px;
+        margin-top: 6%;
+    }
+}
