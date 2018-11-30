@@ -1,8 +1,4 @@
-<ul class="row p-3">
-  <ol class="col-2"><img src="../../../assets/images/contenedores/contenedor_amarillo_xs-01.png" class="size-1 img-fluid" alt=""></ol>
-  <ol class="col-2"><img src="../../../assets/images/contenedores/contenedor_verde_xs-01.png" class="size-1 img-fluid" alt=""></ol>
-  <ol class="col-2"><img src="../../../assets/images/contenedores/contenedor_azul_xs-01.png" class="size-1 img-fluid" alt=""></ol>
-  <ol class="col-2"><img src="../../../assets/images/contenedores/contenedor_naranja_xs-01.png" class="size-1 img-fluid" alt=""></ol>
-  <ol class="col-2"><img src="../../../assets/images/contenedores/contenedor_marron_xs-01.png" class="size-1 img-fluid" alt=""></ol>
-  <ol class="col-2"><img src="" alt=""></ol>
-</ul>
+<div class="row p-3">
+  <div class="col-lg-2 col-md-2 col-sm-2 col-4" *ngFor="let cont of contenedores" (click)="handleClick(cont)"><img src="../../../assets/images/contenedores/contenedor_{{cont.nombre}}_xs-01.png" class=" img-fluid" alt=""></div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-4"><img src="" alt=""></div>
+</div>

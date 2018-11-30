@@ -1,8 +1,8 @@
 export class Contenedor{
   nombre: string
   informacion: string
-  residuos: string[]
-  errores: string[]
+  residuos: any[]
+  errores: any[]
   
   constructor(values){
     this.nombre = values.nombre

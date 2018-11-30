@@ -65,7 +65,7 @@ export class ContenedoresService {
         ]
       }),
       new Contenedor({
-        nombre: 'marrón',
+        nombre: 'marron',
         informacion: '',
         residuos: [
           'Restos de comida',
@@ -79,4 +79,6 @@ export class ContenedoresService {
       })
     ]
   }
+
+
 }
