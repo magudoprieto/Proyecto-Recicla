@@ -9,21 +9,29 @@
 .proyecto{
     padding:25px;
     color: #444;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Varela Round', sans-serif;
 }
-
-h3{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 
 .promotores{
    
     margin:0px auto;
     padding:25px;
     color: #444;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Varela Round', sans-serif;
 }
 
+hr{
+   
+    margin-bottom: 30px;
+}
+
+p{
+    padding: 2%;
+}
 
 
     

@@ -4,3 +4,23 @@
 .container{
     background-color: white;
 }
+
+.bg-personal{
+    background-color:#F0aa21;
+    padding: 20px;
+    border-radius:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-top: 20px; 
+    color:#444;
+    font-size: 1.3em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+h3{
+    text-align: center;
+    margin-top:20px;
+}
