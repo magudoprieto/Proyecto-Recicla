@@ -1,0 +1,24 @@
+<div class="naranja p-4 mt-3 text-light" *ngIf="contenedor">
+  <h2>Contenedor {{contenedor?.nombre}}</h2>
+  <hr>
+  <p>Descripción {{contenedor?.informacion}}</p>
+  <section>
+    <h3>Lo que debes tirar</h3>
+    <ul *ngFor="let ej of contenedor?.residuos">
+      <li>{{ej}}</li>
+    </ul>
+
+  </section>
+
+  <section>
+    <h3>Lo que no debes tirar</h3>
+    <ul *ngFor="let err of contenedor?.errores">
+        <li>{{err}}</li>
+      </ul>
+
+  </section>
+</div>
+
+<div class="naranja p-4 mt-3 text-light" *ngIf="!contenedor">
+  ELIGE UN CONTENEDOR 
+</div>
