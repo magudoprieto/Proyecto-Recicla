@@ -2,3 +2,6 @@
     width: 300px;
     text-decoration: none !important;
 }
+.imagen:hover {
+    filter: opacity(.5);
+}

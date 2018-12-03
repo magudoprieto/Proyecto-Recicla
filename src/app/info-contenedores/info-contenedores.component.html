@@ -4,12 +4,12 @@
       <img src="../../assets/images/ciudad/ciudad.png" class="img-fluid " alt="">
       <img src="../../assets/images/ciudad/camion.png" class="img-fluid size-camion" alt="">
     </div>
-    <div class="col-lg-8 col-md-12 col-xs-12">
+    <div class="col-lg-8 col-md-12 col-xs-12 mt-3 mb-3 bg-fondo">
       <app-contenedores (envioArrContenedor)="handleEnvioArr($event)"></app-contenedores>
       <app-principal [contenedor]="arrContenedroSeleccionado"></app-principal>
     </div>
 
-    <div class="col-lg-4 col-md-12 col-xs-12 mt-3">
+    <div class="col-lg-4 col-md-12 col-xs-12 mt-3 mb-3 bg-fondo">
       <app-informacion [contenedor]="arrContenedroSeleccionado"></app-informacion>
     </div>
   </div>
