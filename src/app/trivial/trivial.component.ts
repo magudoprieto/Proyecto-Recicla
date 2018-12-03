@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ContenedoresService } from '../contenedores.service';
 import { Pregunta } from '../model/pregunta.model';
 
+
 @Component({
   selector: 'app-trivial',
   templateUrl: './trivial.component.html',
@@ -67,6 +68,7 @@ export class TrivialComponent {
     //QUEDA PENDIENTE ESTABLECER LA RUTA UNA VEZ QUE SE ENSAMBLE
     rutaOpen(){
       console.log('Volvemos al open');
+      
     }
 
 }

@@ -28,5 +28,5 @@
 
 <div *ngIf="fin" class="containerDos">
     <p>El juego se ha terminado. Esperamos que te hayas divertido. Tu puntuación es de: {{contPuntos}}</p>
-    <button class="btn btn-primary-light boton" (click)="rutaOpen()">Regresar</button>
+    <button [routerLink]="['/open']" class="btn btn-primary-light boton">Regresar</button>
 </div>
