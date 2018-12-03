@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="row justify-content-around">
+    <div class="col-6 text-center border border-info rounded"><p>Puntuación: {{contPuntos}}</p></div>
+
+    <div class="col-6 text-center border border-info rounded"><p>Tiempo: {{contTiempo}}</p></div>
+  </div>
+
+  <div class="row justify-content-around">
+    <div class="col-12 text-center border border-info rounded mt-5">
+      <h1>{{pregunta.texto}}</h1>
+    </div>
+    <div class="col-5 btn btn-info p-3 mt-5" *ngFor="let preg of pregunta.respuestas" (click)="handleClick($event)">
+      <p>{{preg}}</p>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="mostrar" class="containerDos">
+  
+  <p *ngIf="acierto">¡Enhorabuena! Has acertado. Ganas 50 puntos</p>
+  <p *ngIf="!acierto">¡Oh, que lastima! Te has equivocado</p>
+  
+  <button class="btn btn-primary-light boton" (click)="cerrarPantalla()">Continuar</button>
+
+</div>
+
+<div *ngIf="fin" class="containerDos">
+    <p>El juego se ha terminado. Esperamos que te hayas divertido. Tu puntuación es de: {{contPuntos}}</p>
+    <button class="btn btn-primary-light boton" (click)="rutaOpen()">Regresar</button>
+</div>

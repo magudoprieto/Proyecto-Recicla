@@ -20,6 +20,7 @@ import { InfoContenedoresComponent } from './info-contenedores/info-contenedores
 import { ContenedoresComponent } from './info-contenedores/contenedores/contenedores.component';
 import { PrincipalComponent } from './info-contenedores/principal/principal.component';
 import { InformacionComponent } from './info-contenedores/informacion/informacion.component';
+import { TrivialComponent } from './trivial/trivial.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { InformacionComponent } from './info-contenedores/informacion/informacio
     InfoContenedoresComponent,
     ContenedoresComponent,
     PrincipalComponent,
-    InformacionComponent
+    InformacionComponent,
+    TrivialComponent
   ],
   imports: [
     BrowserModule,
