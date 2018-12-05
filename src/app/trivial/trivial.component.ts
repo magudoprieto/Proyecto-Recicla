@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContenedoresService } from '../contenedores.service';
 import { Pregunta } from '../model/pregunta.model';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class TrivialComponent {
   acierto:boolean;
   fin:boolean;
 
-  constructor(private preguntasService: ContenedoresService){
+  constructor(private preguntasService: ContenedoresService,
+              private router:Router){
     this.pregunta = this.preguntasService.getPreguntaActiva();
     this.arrPreguntas = this.preguntasService.getArrPreguntas();
     this.contPuntos = 0;
@@ -67,7 +69,9 @@ export class TrivialComponent {
     //Al hacer click volvemos al open
     //QUEDA PENDIENTE ESTABLECER LA RUTA UNA VEZ QUE SE ENSAMBLE
     rutaOpen(){
-      console.log('Volvemos al open');
+      //PENDIENTE hacer una petición para ingresar la puntuación al usuario
+      window.location.reload();
+      this.router.navigate(['/open']);
       
     }
 
