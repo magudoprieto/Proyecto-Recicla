@@ -207,6 +207,10 @@ export class ContenedoresService {
 
   }
 
+  resetPreguntaActiva(){
+    this.preguntaActiva = 0
+  }
+
   getArrPreguntas(){
     return this.arrPreguntas;
   }

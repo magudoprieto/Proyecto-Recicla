@@ -21,6 +21,12 @@ export class TrivialComponent {
 
   constructor(private preguntasService: ContenedoresService,
               private router:Router){
+    
+   
+  }
+
+  ngOnInit(){
+    this.preguntasService.resetPreguntaActiva();
     this.pregunta = this.preguntasService.getPreguntaActiva();
     this.arrPreguntas = this.preguntasService.getArrPreguntas();
     this.contPuntos = 0;
@@ -28,7 +34,6 @@ export class TrivialComponent {
     this.mostrar = false;
     this.acierto = true;
     this.fin = false;
-   
   }
 
   //QUEDA PENDIENTE EL CONTADOR DE TIEMPO
@@ -70,7 +75,7 @@ export class TrivialComponent {
     //QUEDA PENDIENTE ESTABLECER LA RUTA UNA VEZ QUE SE ENSAMBLE
     rutaOpen(){
       //PENDIENTE hacer una petición para ingresar la puntuación al usuario
-      window.location.reload();
+     
       this.router.navigate(['/open']);
       
     }
