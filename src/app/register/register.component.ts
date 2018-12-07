@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
         
     /*Minimo 8 caracteres Maximo 15 Al menos una letra mayúscula Al menos una letra minucula Al menos un dígito No espacios en blanco Al menos 1 caracter especial*/
 
-        contrasena: new FormControl('',[Validators.required,Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/)]),
+        contrasena: new FormControl(''/*,[Validators.required,Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/)]*/),
         nombre: new FormControl('',[Validators.required,Validators.maxLength(40),Validators.minLength(3)]),
         edad: new FormControl('',[Validators.required]),
         municipio: new FormControl(),
