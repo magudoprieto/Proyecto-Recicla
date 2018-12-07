@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl,Validators, RequiredValidator } from '@angular/forms';
+import { FormGroup, FormControl,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +21,8 @@ export class RegisterComponent implements OnInit {
         edad: new FormControl('',[Validators.required]),
         municipio: new FormControl(),
         provincia: new FormControl(),
-        postal: new FormControl('',[Validators.minLength(5),Validators.maxLength(5)])
+        postal: new FormControl('',[Validators.minLength(5),Validators.maxLength(5)]),
+        curso: new FormControl('',[Validators.required])
     });
    }
 

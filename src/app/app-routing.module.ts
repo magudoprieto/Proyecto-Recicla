@@ -19,8 +19,8 @@ const routes: Routes = [
     {path:'',component:FormulariologinComponent},
     {path: 'profile', component:ProfileComponent}
   ]},
-  {path: 'juego1', component: InfoContenedoresComponent},
-  { path: 'juego2',component: TrivialComponent },
+  {path: 'colores', component: InfoContenedoresComponent},
+  { path: 'trivial',component: TrivialComponent },
   {path: 'proyecto', component:ProyectoComponent},
   {path: 'registro', component:RegisterComponent}
 ];
