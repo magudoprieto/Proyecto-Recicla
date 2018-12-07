@@ -21,6 +21,7 @@ import { ContenedoresComponent } from './info-contenedores/contenedores/contened
 import { PrincipalComponent } from './info-contenedores/principal/principal.component';
 import { InformacionComponent } from './info-contenedores/informacion/informacion.component';
 import { TrivialComponent } from './trivial/trivial.component';
+import { PuntuacionComponent } from './puntuacion/puntuacion.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { TrivialComponent } from './trivial/trivial.component';
     ContenedoresComponent,
     PrincipalComponent,
     InformacionComponent,
-    TrivialComponent
+    TrivialComponent,
+    PuntuacionComponent
   ],
   imports: [
     BrowserModule,
