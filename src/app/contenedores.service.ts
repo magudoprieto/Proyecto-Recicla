@@ -95,11 +95,11 @@ residuos:any[];
     //componente reciclatu
     //ARRAY CONTENEDORES OBJETO CONTENEDOR
     this.contenedores = [
-      new Contenedore(0,'organico','brown','../../assets/img/c_marron.png'),
-      new Contenedore(1,'residuo','orange','../../assets/img/c_naranja.png'),
-      new Contenedore(2,'vidrio','green','../../assets/img/c_verde.png'),
-      new Contenedore(3,'plastico','yellow','../../assets/img/c_amarillo.png'),
-      new Contenedore(4,'papel','azul','../../assets/img/c_azul.png')
+      new Contenedore(0,'organico','brown','../../assets/images/c_marron.png'),
+      new Contenedore(1,'residuo','orange','../../assets/images/c_naranja.png'),
+      new Contenedore(2,'vidrio','green','../../assets/images/c_verde.png'),
+      new Contenedore(3,'plastico','yellow','../../assets/images/c_amarillo.png'),
+      new Contenedore(4,'papel','azul','../../assets/images/c_azul.png')
     ];
 
     //ARRAY OBJETO RESIDUOS
@@ -108,19 +108,19 @@ residuos:any[];
         id:0,
         nombre:'platano',
         tipo:'organico',
-        imagen: 'ruta'
+        imagen: '../../assets/images/platano.png'
       },
       {
         id:1,
         nombre:'botella',
         tipo:'vidrio',
-        imagen: 'ruta'
+        imagen: '../../assets/images/vino.png'
       },
       {
         id:2,
-        nombre:'cereales',
+        nombre:'cartones',
         tipo:'papel',
-        imagen: 'ruta'
+        imagen: '../../assets/images/cartones.png'
       },
       {
         id:3,
@@ -130,15 +130,15 @@ residuos:any[];
       },
       {
         id:4,
-        nombre:'bolsa',
+        nombre:'lejia',
         tipo:'plastico',
-        imagen: 'ruta'
+        imagen: '../../assets/images/lejia.png'
       },
       {
         id:5,
         nombre:'algodon',
         tipo:'residuo',
-        imagen: 'ruta'
+        imagen: '../../assets/images/algodon.png'
       },
       {
         id:6,

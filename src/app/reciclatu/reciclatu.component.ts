@@ -48,13 +48,14 @@ export class ReciclatuComponent implements OnInit {
     console.log($event.dropData);
     //Esta instruccion iguala a la prop tipoContenedor el string con el nombre del objeto contenedor concreto
     this.contenedor = pcontenedor;
-    console.log(this.contenedor);
+    console.log(this.contenedor.nombre);
+    console.log(this.residuo.tipo);
     
 
     //Ahora hay que igualar
       if(this.contenedor.nombre == this.residuo.tipo){
         this.acierto = 'true';
-        this.residuos.shift();
+        this.residuos.pop();
         this.contador += 50;
         setTimeout(()=>{
           this.acierto = '';
@@ -62,7 +63,7 @@ export class ReciclatuComponent implements OnInit {
     
       }else{
         this.acierto = 'false';
-        this.residuos.shift();
+        this.residuos.pop();
         setTimeout(()=>{
           this.acierto = '';
         },2000);

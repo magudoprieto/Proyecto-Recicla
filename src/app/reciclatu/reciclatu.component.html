@@ -19,4 +19,6 @@
       </div>
   
     <!--Residuos-->
-  <div *ngFor="let residuo of residuos; let i = index"  mwlDraggable class="caja" dropData="{{residuo.tipo}}" (dragEnd)="dragEnd($event,residuo)"></div>
+  <div *ngFor="let residuo of residuos; let i = index"  mwlDraggable class="caja" dropData="{{residuo.tipo}}" (dragEnd)="dragEnd($event,residuo)">
+    <img src="{{residuo.imagen}}"/>
+  </div>
