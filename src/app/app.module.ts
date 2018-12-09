@@ -22,6 +22,8 @@ import { PrincipalComponent } from './info-contenedores/principal/principal.comp
 import { InformacionComponent } from './info-contenedores/informacion/informacion.component';
 import { TrivialComponent } from './trivial/trivial.component';
 import { PuntuacionComponent } from './puntuacion/puntuacion.component';
+import { ReciclatuComponent } from './reciclatu/reciclatu.component';
+import { DragAndDropModule } from 'angular-draggable-droppable';
 
 
 @NgModule({
@@ -43,14 +45,16 @@ import { PuntuacionComponent } from './puntuacion/puntuacion.component';
     PrincipalComponent,
     InformacionComponent,
     TrivialComponent,
-    PuntuacionComponent
+    PuntuacionComponent,
+    ReciclatuComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DragAndDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

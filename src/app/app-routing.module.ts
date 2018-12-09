@@ -10,19 +10,22 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { InfoContenedoresComponent } from './info-contenedores/info-contenedores.component';
 import { TrivialComponent } from './trivial/trivial.component';
+import { ReciclatuComponent } from './reciclatu/reciclatu.component';
 
 //This is my case 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'open', component: OpenComponent, children:[
-    {path:'',component:FormulariologinComponent},
-    {path: 'profile', component:ProfileComponent}
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'open', component: OpenComponent, children:[
+    { path:'',component:FormulariologinComponent },
+    { path: 'profile', component:ProfileComponent }
   ]},
-  {path: 'colores', component: InfoContenedoresComponent},
+  { path: 'colores', component: InfoContenedoresComponent},
   { path: 'trivial',component: TrivialComponent },
-  {path: 'proyecto', component:ProyectoComponent},
-  {path: 'registro', component:RegisterComponent}
+  { path: 'reciclatu',component: ReciclatuComponent },
+  { path: 'proyecto', component:ProyectoComponent },
+  { path: 'registro', component:RegisterComponent },
+  { path: '**',pathMatch: 'full',redirectTo: 'home' }
 ];
 
 @NgModule({

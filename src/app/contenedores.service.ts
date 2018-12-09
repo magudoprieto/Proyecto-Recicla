@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Contenedor } from './model/contenedor.model';
+import { Contenedore } from './model/contenedore.model';
 import { Pregunta } from './model/pregunta.model';
 import { PREGUNTAS } from '../app/data/preguntas.db';
 
@@ -13,6 +14,10 @@ export class ContenedoresService {
 //componente trivial
   arrPreguntas: Pregunta[];
   preguntaActiva: number;
+
+//componente reciclatu
+contenedores:Contenedore[];
+residuos:any[];
 
   constructor() { 
     //componente contenedor
@@ -87,6 +92,73 @@ export class ContenedoresService {
     ]
     //componente trivial
     this.preguntaActiva = 0;
+    //componente reciclatu
+    //ARRAY CONTENEDORES OBJETO CONTENEDOR
+    this.contenedores = [
+      new Contenedore(0,'organico','brown','../../assets/img/c_marron.png'),
+      new Contenedore(1,'residuo','orange','../../assets/img/c_naranja.png'),
+      new Contenedore(2,'vidrio','green','../../assets/img/c_verde.png'),
+      new Contenedore(3,'plastico','yellow','../../assets/img/c_amarillo.png'),
+      new Contenedore(4,'papel','azul','../../assets/img/c_azul.png')
+    ];
+
+    //ARRAY OBJETO RESIDUOS
+    this.residuos = [
+      {
+        id:0,
+        nombre:'platano',
+        tipo:'organico',
+        imagen: 'ruta'
+      },
+      {
+        id:1,
+        nombre:'botella',
+        tipo:'vidrio',
+        imagen: 'ruta'
+      },
+      {
+        id:2,
+        nombre:'cereales',
+        tipo:'papel',
+        imagen: 'ruta'
+      },
+      {
+        id:3,
+        nombre:'pollo',
+        tipo:'organico',
+        imagen: 'ruta'
+      },
+      {
+        id:4,
+        nombre:'bolsa',
+        tipo:'plastico',
+        imagen: 'ruta'
+      },
+      {
+        id:5,
+        nombre:'algodon',
+        tipo:'residuo',
+        imagen: 'ruta'
+      },
+      {
+        id:6,
+        nombre:'folio',
+        tipo:'papel',
+        imagen: 'ruta'
+      },
+      {
+        id:7,
+        nombre:'chicle',
+        tipo:'residuo',
+        imagen: 'ruta'
+      },
+      {
+        id:8,
+        nombre:'bolsa',
+        tipo:'plastico',
+        imagen: 'ruta'
+      },
+    ];
     
   }
 
@@ -103,6 +175,19 @@ export class ContenedoresService {
   getPreguntas(){
     return PREGUNTAS;
   }
+
+  //componente reciclatu
+  getContenedores(){
+    return this.contenedores;
+  }
+
+ getObjectContenedor(idx:string){ //FALLA
+   return this.contenedores[idx];
+ }
+ 
+ getResiduos(){
+    return this.residuos;
+ }
   
 
 }
