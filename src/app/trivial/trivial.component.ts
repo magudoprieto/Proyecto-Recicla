@@ -4,6 +4,7 @@ import { Pregunta } from '../model/pregunta.model';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-trivial',
   templateUrl: './trivial.component.html',
@@ -28,7 +29,7 @@ export class TrivialComponent {
   ngOnInit(){
     this.preguntasService.resetPreguntaActiva();
     this.pregunta = this.preguntasService.getPreguntaActiva();
-    this.arrPreguntas = this.preguntasService.getArrPreguntas();
+    this.arrPreguntas = this.preguntasService.getPreguntas();
     this.contPuntos = 0;
     this.contTiempo = 60;
     this.mostrar = false;

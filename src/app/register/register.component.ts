@@ -30,6 +30,7 @@ export class RegisterComponent implements OnInit {
   }
 
   usuarioRegistrado(data){
+   //En este método hay que ordenar al servidor que haga un insert de usuario en la base de datos.
     console.log(data);
   }
 
