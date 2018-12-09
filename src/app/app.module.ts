@@ -23,6 +23,7 @@ import { InformacionComponent } from './info-contenedores/informacion/informacio
 import { TrivialComponent } from './trivial/trivial.component';
 import { PuntuacionComponent } from './puntuacion/puntuacion.component';
 import { ReciclatuComponent } from './reciclatu/reciclatu.component';
+import { DragAndDropModule } from 'angular-draggable-droppable';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ReciclatuComponent } from './reciclatu/reciclatu.component';
     NgbModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DragAndDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
