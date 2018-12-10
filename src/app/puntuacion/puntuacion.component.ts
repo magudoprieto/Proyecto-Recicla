@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PeticionesService } from '../peticiones.service'
+import { PeticionesService } from '../peticiones.service';
 
 @Component({
   selector: 'app-puntuacion',
@@ -12,8 +12,7 @@ export class PuntuacionComponent implements OnInit {
 
   ngOnInit() {
     this.peticionesService.getPartidas().then((res) => {
-      console.log(res.json());  //Esto da error porque falta realizar la parte de back
+      console.log(res.json());
     })
   }
-
 }
