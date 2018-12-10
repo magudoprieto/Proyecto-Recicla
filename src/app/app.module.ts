@@ -24,7 +24,7 @@ import { TrivialComponent } from './trivial/trivial.component';
 import { PuntuacionComponent } from './puntuacion/puntuacion.component';
 import { ReciclatuComponent } from './reciclatu/reciclatu.component';
 import { DragAndDropModule } from 'angular-draggable-droppable';
-
+import { HttpModule } from '@angular/http'
 
 @NgModule({
   declarations: [
@@ -54,7 +54,8 @@ import { DragAndDropModule } from 'angular-draggable-droppable';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    DragAndDropModule
+    DragAndDropModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
