@@ -12,6 +12,6 @@ export class PeticionesService {
     this.baseUrl = 'http://localhost:3000/api';
   }
   getPartidas() {
-    return this.http.get(`${this.baseUrl}/partidas`).toPromise();
+    return this.http.get(`${this.baseUrl}/partidas/json`).toPromise();
   }
 }
