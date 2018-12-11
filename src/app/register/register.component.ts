@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl,Validators } from '@angular/forms';
+import { PeticionesService } from '../peticiones.service';
 
 @Component({
   selector: 'app-register',
@@ -9,8 +10,9 @@ import { FormGroup, FormControl,Validators } from '@angular/forms';
 export class RegisterComponent implements OnInit {
 
   form:FormGroup;
+  usuarios:any[];
 
-  constructor() {
+  constructor(private peticionesService: PeticionesService) {
     this.form = new FormGroup({
         email: new FormControl('',[Validators.required,Validators.email,Validators.maxLength(40)]),
         
@@ -27,11 +29,20 @@ export class RegisterComponent implements OnInit {
    }
 
   ngOnInit() {
+    
   }
 
-  usuarioRegistrado(data){
-   //En este método hay que ordenar al servidor que haga un insert de usuario en la base de datos.
-    console.log(data);
+  usuarioRegistrado(values){
+   //En este método hay que ordenar al servicio que envie los datos de form al servicio.
+    console.log(values);
+    this.peticionesService.nuevoUsuario(values).then((res)=>{
+      console.log(res.json());
+      const response = res.json();
+      if(response.error){
+        alert(response.error);
+      }
+     
+    });
   }
 
 }
