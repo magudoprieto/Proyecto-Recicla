@@ -6,23 +6,20 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Nombre</th>
-          <th scope="col">Colegio</th>
+          <th scope="col">Juego</th>
           <th scope="col">Puntuación</th>
+          <th scope="col">Fecha</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Santo Tomás</td>
-          <td>150</td>
+        <tr *ngFor="let partida of partidas; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{partida.username}}</td>
+          <td>{{partida.nombre}}</td>
+          <td>{{partida.puntuacion}}</td>
+          <td>{{partida.fecha}}</td>
         </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>La Salle</td>
-          <td>480</td>
-        </tr>
+        
       </tbody>
     </table>
   </div>
