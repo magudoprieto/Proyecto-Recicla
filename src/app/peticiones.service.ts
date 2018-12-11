@@ -20,4 +20,10 @@ export class PeticionesService {
   nuevoUsuario(values){
     return this.http.post(`${this.baseUrl}/usuarios/json`,values).toPromise();
   }
+
+  //componente login
+  usuarioLogueado(values){
+    return this.http.post(`${this.baseUrl}/usuarios/json`,values).toPromise();
+  }
+
 }
