@@ -23,7 +23,17 @@ export class PeticionesService {
 
   //componente login
   usuarioLogueado(values){
-    return this.http.post(`${this.baseUrl}/usuarios/json`,values).toPromise();
+    return this.http.post(`${this.baseUrl}/usuarios/login`,values).toPromise();
+  }
+
+  //peticion agregar partidas
+  agregarPartidas(data){
+    return this.http.post(`${this.baseUrl}/partidas/enter`,data).toPromise();
+  }
+
+  //conseguir id usuario logueado
+  getUsuarioLog(){
+    return this.http.get(`${this.baseUrl}/usuarios/login`).toPromise();
   }
 
 }

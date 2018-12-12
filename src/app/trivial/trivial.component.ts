@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ContenedoresService } from '../contenedores.service';
 import { Pregunta } from '../model/pregunta.model';
 import { Router } from '@angular/router';
+import { PeticionesService } from '../peticiones.service';
 
 
 
@@ -19,9 +20,11 @@ export class TrivialComponent {
   mostrar:boolean;
   acierto:boolean;
   fin:boolean;
+  
 
   constructor(private preguntasService: ContenedoresService,
-              private router:Router){
+              private router:Router,
+              private peticionesService: PeticionesService){
     
    
   }
@@ -76,7 +79,18 @@ export class TrivialComponent {
     //QUEDA PENDIENTE ESTABLECER LA RUTA UNA VEZ QUE SE ENSAMBLE
     rutaOpen(){
       //PENDIENTE hacer una petición para ingresar la puntuación al usuario
-     
+      
+      
+      let datosNode = {
+        puntos: this.contPuntos,
+        juego: 'trivial'
+      }
+      
+      this.peticionesService.agregarPartidas(datosNode).then((res)=>{
+
+      });
+      console.log(datosNode);
+      this.contPuntos = 0;
       this.router.navigate(['/open']);
       
     }

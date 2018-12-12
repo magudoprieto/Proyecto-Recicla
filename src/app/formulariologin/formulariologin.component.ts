@@ -33,10 +33,15 @@ export class FormulariologinComponent implements OnInit {
         this.errorLogin = true;
       }
     });
-
-
-    
+    this.peticionesService.getUsuarioLog().then((res)=>{
+      console.log(res);
+      
+      
+      
+    });
   }
+
+
 
   
 
