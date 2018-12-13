@@ -9,10 +9,12 @@ import { PeticionesService } from '../peticiones.service';
 })
 export class FormulariologinComponent implements OnInit {
   
-  usuario:any[]; //Usuario logueado
+  usuario: any[]; //Usuario logueado
+  error: boolean
   form: FormGroup
 
   constructor(private peticionesService: PeticionesService) {
+    this.error = false
     this.form = new FormGroup({
       usuario: new FormControl(),
       contrasena: new FormControl()
@@ -26,7 +28,16 @@ export class FormulariologinComponent implements OnInit {
     //console.log(data); //USUARIO Y SU PASSWORD (DATOS ESCRITOS EN EL LOGIN)
     this.peticionesService.usuarioLogueado(data).then((res) => {
       console.log(res.json()) //TODA LA INFORMACIÓN DEL USUARIO QUE ESTÁ LOGIN
-      this.usuario = res.json()
+      const response = res.json()
+      if (response.error) {
+        console.log('El usuario no existe')
+        this.error = true
+      } else {
+        this.usuario = res.json()
+        localStorage.setItem("usuario", JSON.stringify(this.usuario))
+        console.log('El usuario existe')
+      }
+      
     });
    
   }

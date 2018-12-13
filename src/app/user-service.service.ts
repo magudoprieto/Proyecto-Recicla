@@ -4,6 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserServiceService {
+  usuarioLog: any[]
 
   constructor() { }
+
+  currentUser() {
+    this.usuarioLog = JSON.parse(localStorage.getItem("usuario"))
+    console.log(this.usuarioLog)
+  }
 }
