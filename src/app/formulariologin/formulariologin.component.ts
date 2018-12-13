@@ -9,11 +9,10 @@ import { PeticionesService } from '../peticiones.service';
 })
 export class FormulariologinComponent implements OnInit {
   
-  usuario:any[];
+  usuario:any[]; //Usuario logueado
   form: FormGroup
 
   constructor(private peticionesService: PeticionesService) {
-    
     this.form = new FormGroup({
       usuario: new FormControl(),
       contrasena: new FormControl()
@@ -24,11 +23,10 @@ export class FormulariologinComponent implements OnInit {
   }
 
   inicioSesion(data) {
-    this.usuario = data;
-    console.log(this.usuario);
+    //console.log(data); //USUARIO Y SU PASSWORD (DATOS ESCRITOS EN EL LOGIN)
     this.peticionesService.usuarioLogueado(data).then((res) => {
-      console.log(res.json())
-      
+      console.log(res.json()) //TODA LA INFORMACIÓN DEL USUARIO QUE ESTÁ LOGIN
+      this.usuario = res.json()
     });
    
   }
