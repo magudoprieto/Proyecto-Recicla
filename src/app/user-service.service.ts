@@ -10,6 +10,5 @@ export class UserServiceService {
 
   currentUser() {
     this.usuarioLog = JSON.parse(localStorage.getItem("usuario"))
-    console.log(this.usuarioLog)
   }
 }
