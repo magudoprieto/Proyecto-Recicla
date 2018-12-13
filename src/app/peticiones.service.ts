@@ -31,9 +31,4 @@ export class PeticionesService {
     return this.http.post(`${this.baseUrl}/partidas/enter`,data).toPromise();
   }
 
-  //conseguir id usuario logueado
-  getUsuarioLog(){
-    return this.http.get(`${this.baseUrl}/usuarios/login`).toPromise();
-  }
-
 }
