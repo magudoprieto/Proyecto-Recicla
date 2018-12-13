@@ -27,6 +27,11 @@ h3{
     text-align: center;
 }
 
+.sombra:hover img{
+    opacity: 0.6;
+    transition:1s; 
+}
+
 .row:after{
     clear: both;
 }
@@ -34,4 +39,9 @@ h3{
 img{
     border-radius: 10px;
 }
+
+a{
+    text-decoration: none;
+}
+
 
