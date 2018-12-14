@@ -1,3 +1,10 @@
-<div class="bg-personal">
-  <h2 class="text-light">Hola {{usuario.username}}</h2>
+<div class="bg-personal text-light p-3 row">
+  <div class="col-6">
+    <h2 class="text-light">Hola {{usuario.username}}</h2>
+    <p>{{usuario.email}}</p>
+  </div>
+  <div class="col-6">
+    <button (click)="logout()" class="btn">Logout</button>
+  </div>
+  
 </div>
