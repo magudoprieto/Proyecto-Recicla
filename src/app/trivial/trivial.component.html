@@ -25,17 +25,17 @@
 
 
 
-  <div *ngIf="mostrar" class="containerDos">
+  <div *ngIf="mostrar" class="containerDos text-center">
   
     <p *ngIf="acierto">¡Enhorabuena! Has acertado.</p>
     <p *ngIf="!acierto">¡Oh, que lastima! Te has equivocado</p>
     
-    <button class="btn btn-primary-light boton" (click)="cerrarPantalla()">Continuar</button>
+    <button class="btn btn-primary-light boton mt-5" (click)="cerrarPantalla()">Continuar</button>
   
   </div>
 
 
-<div *ngIf="fin" class="containerDos">
-    <p>El juego se ha terminado. Esperamos que te hayas divertido. Tu puntuación es de: {{contPuntos}}</p>
-    <button class="btn btn-primary-light boton" (click)="rutaOpen()">Regresar</button>
+<div *ngIf="fin" class="containerDos text-center">
+    <p class="ml-5 mr-5">¡Fin!. Tu puntuación es de: {{contPuntos}} puntos.</p>
+    <button class="btn btn-primary-light boton mt-5" (click)="rutaOpen()">Regresar</button>
 </div>
