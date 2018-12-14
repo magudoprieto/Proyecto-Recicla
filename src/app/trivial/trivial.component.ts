@@ -31,7 +31,7 @@ export class TrivialComponent {
               private peticionesService: PeticionesService,
               private userService: UserServiceService){
     
-         this.usuario = JSON.parse(localStorage.getItem("usuario")).username     
+         this.usuario = JSON.parse(localStorage.getItem("usuario")).id     
   }
 
   ngOnInit(){
@@ -88,8 +88,8 @@ export class TrivialComponent {
       
       let datosNode = {
         puntos: this.contPuntos,
-        juego: 'trivial',
-        nombre: this.usuario
+        id_juego: 2,
+        id_usuario: this.usuario
       }
       
       this.peticionesService.agregarPartidas(datosNode).then((res)=>{

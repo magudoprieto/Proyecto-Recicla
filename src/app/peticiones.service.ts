@@ -28,6 +28,7 @@ export class PeticionesService {
 
   //peticion agregar partidas
   agregarPartidas(data){
+    console.log(data)
     return this.http.post(`${this.baseUrl}/partidas/enter`,data).toPromise();
   }
 
