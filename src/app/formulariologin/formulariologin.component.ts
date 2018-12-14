@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { PeticionesService } from '../peticiones.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulariologin',
@@ -13,7 +14,8 @@ export class FormulariologinComponent implements OnInit {
   error: boolean
   form: FormGroup
 
-  constructor(private peticionesService: PeticionesService) {
+  constructor(private peticionesService: PeticionesService,
+              private router: Router) {
     this.error = false
     this.form = new FormGroup({
       usuario: new FormControl(),
@@ -36,6 +38,7 @@ export class FormulariologinComponent implements OnInit {
         this.usuario = res.json()
         localStorage.setItem("usuario", JSON.stringify(this.usuario))
         console.log('El usuario existe')
+        this.router.navigate(['open/profile'])
       }
       
     });
