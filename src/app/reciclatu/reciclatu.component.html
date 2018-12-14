@@ -1,24 +1,35 @@
-<div class="canvas">
-  <div class="marcador">
-    <p> </p>
-    <p *ngIf="acierto == 'true'">¡Enhorabuena! Has acertado.</p>
-    <p *ngIf="acierto == 'false'">Lo siento mucho. Te has equivocado.</p>
-  </div>
-  <div class="puntos">
-    <p>Tu puntuación es: {{contador}}</p>
-  </div>
-  <!--Contenedores-->
-      <div class="contenedores m-auto">
-
-        <div *ngFor="let contenedor of contenedores" mwlDroppable class="box" (drop)="onDrop($event, contenedor)" [id]="contenedor.nombre">
-            <img src="{{contenedor.imagen}}"/>
-            <!--<span [hidden]="droppedData">Drop here</span>
-            <span [hidden]="!droppedData">Datos arrastrados: "{{ droppedData }}"!</span>-->
-        </div>
-          <!--{{droppedData}}-->
-      </div>
+<div class="canvas container-fluid m-0">
   
-    <!--Residuos-->
-  <div *ngFor="let residuo of residuos; let i = index"  mwlDraggable class="caja" dropData="{{residuo.tipo}}" (dragEnd)="dragEnd($event,residuo)">
-    <img src="{{residuo.imagen}}"/>
+  <div class="container bg-dark text-light">
+
+      <div class="row alturaMarcadores">
+  
+        <div class="marcador col-12 col-md-6 text-center mt-0">
+          <p> </p>
+          <p *ngIf="acierto == 'true'">¡Enhorabuena! Has acertado.</p>
+          <p *ngIf="acierto == 'false'">Lo siento mucho. Te has equivocado.</p>
+        </div>
+        <div class="puntos col-12 col-md-6 text-center pt-3">
+          <p>Tu puntuación es: {{contador}}</p>
+        </div>
+      </div>
+        <!--Contenedores-->
+            
+       
+            <div class="contenedores row">
+
+              <div class="col-6 col-md-2 p-auto" *ngFor="let contenedor of contenedores" mwlDroppable (drop)="onDrop($event, contenedor)" [id]="contenedor.nombre">
+                  <img class="img-fluid" src="{{contenedor.imagen}}"/>
+                  <!--<span [hidden]="droppedData">Drop here</span>
+                  <span [hidden]="!droppedData">Datos arrastrados: "{{ droppedData }}"!</span>-->
+              </div>
+                <!--{{droppedData}}-->
+            </div>
+        
+        
+          <!--Residuos-->
+        <div *ngFor="let residuo of residuos; let i = index"  mwlDraggable class="caja" dropData="{{residuo.tipo}}" (dragEnd)="dragEnd($event,residuo)">
+          <img src="{{residuo.imagen}}"/>
+        </div>
   </div>
+</div>
