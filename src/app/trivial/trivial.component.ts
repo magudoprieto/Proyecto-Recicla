@@ -3,6 +3,7 @@ import { ContenedoresService } from '../contenedores.service';
 import { Pregunta } from '../model/pregunta.model';
 import { Router } from '@angular/router';
 import { PeticionesService } from '../peticiones.service';
+import { UserServiceService } from '../user-service.service';
 
 
 
@@ -20,13 +21,17 @@ export class TrivialComponent {
   mostrar:boolean;
   acierto:boolean;
   fin:boolean;
+
+  usuario: string;
+  
   
 
   constructor(private preguntasService: ContenedoresService,
               private router:Router,
-              private peticionesService: PeticionesService){
+              private peticionesService: PeticionesService,
+              private userService: UserServiceService){
     
-   
+         this.usuario = JSON.parse(localStorage.getItem("usuario")).username     
   }
 
   ngOnInit(){
@@ -83,7 +88,8 @@ export class TrivialComponent {
       
       let datosNode = {
         puntos: this.contPuntos,
-        juego: 'trivial'
+        juego: 'trivial',
+        nombre: this.usuario
       }
       
       this.peticionesService.agregarPartidas(datosNode).then((res)=>{
