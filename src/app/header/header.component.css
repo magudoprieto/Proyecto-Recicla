@@ -1,7 +1,7 @@
 .cabeceropersonalizado{
 	background-color: #4FB99F;
 	color: white;
-	border-bottom:2px solid black;
+	/*border-bottom:2px solid black;*/
 }
 
 .cabeceropersonalizado a{
@@ -10,12 +10,12 @@
 }
 
 a{
-	text-shadow: 1px 1px #000;
+	/*text-shadow: 1px 1px #000;*/
 }
 
 
 .activa{
-	color:grey !important;
+	color:lightgrey !important;
 }
 
 

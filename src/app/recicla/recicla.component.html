@@ -1,31 +1,56 @@
+<div class="container-fluid bg-warning">
+  <div class="container-fluid bg-warning">
+    <div class="container bg-warning text-light pt-5 pb-5">
+      <h2>¿CÓMO FUNCIONA?</h2>
+      <h5>Diviertete aprendiendo a reciclar</h5>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid">
   <div class="container">
-
-    <h1 class="m-3">RECICLA HOY</h1>
-    <h2>¿Cómo funciona?</h2>
     <div class="row">
-
-        <div class="col-6 bg-light"><img src="" alt=""></div>
-        <div class="col-6">
-          <h3>1 Te registras</h3>
-          <p>El registro debe realizarlo el adulto responsable de los niños a lo que va a permitir el acceso a los juegos</p>
+          <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-4">
+            <a [routerLink]="['../registro']">
+              <img class="img-fluid" src="../../assets/images/registro.png" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xs-12 col-md-8 col-lg-8 mb-4 mt-4 pt-4">
+            <h2><a [routerLink]="['../registro']">¡Registrate!</a></h2>
+            <p>Registrarse en <strong>Recicla hoy</strong> es muy sencillo, solo necesitarás un email, un nickname y una contraseña. Recuerda que la contraseña la necesitarás para poder acceder a tu perfil. Además puedes añadir otra información como tu curso o edad.</p>
         </div>
-
-        <div class="col-6">
-          <h3>2 Durante el registro deberas añadir a los niños que quieren jugar</h3>
-          <p>¡No te olvides de darle a guardar!</p>
-        </div>
-        <div class="col-6 bg-light"><img src="" alt=""></div>
-
-        <div class="col-6 bg-light"><img src="" alt=""></div>
-        <div class="col-6">
-          <h3>3 Los niños estan listos para jugar</h3>
-          <p>Recuerda que puedes acceder en cualquier momento a tu cuenta de usuario para consultar tus puntos y el ranquin</p>
-        </div>
-
+      </div>
     </div>
+  </div>
 
-    
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-4 mt-4">
+          <a [routerLink]="['../open']">
+            <img class="img-fluid" src="../../assets/images/promocion.png">
+          </a>
+        </div>
+        <div class="col-12 col-xs-12 col-md-8 col-lg-8 mb-4 mt-4 pt-4">
+          <h2><a [routerLink]="['../open']">¡A jugar!</a></h2>
+          <p>Antes de empezar a jugar recuerda que debes acceder a tu perfil. Elige de entre los juegos que tenemos disponibles el que más te guste y difruta aprendiendo a reciclar. No olvides que puedes jugar cuantas veces quieras.</p>
+        </div>
+    </div>
+  </div>
+</div>
 
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">  
+        <div class="col-12 col-xs-12 col-md-4 col-lg-4 mb-4 mt-4">
+          <a [routerLink]="['../puntuacion']">
+            <img class="img-fluid" src="../../assets/images/puntuacion.png" alt="">
+          </a>
+        </div>
+        <div class="col-12 col-xs-12 col-md-8 col-lg-8 mb-4 mt-4 pt-4">
+          <h2><a [routerLink]="['../puntuacion']">Echale un vistazo a las puntuaciones</a></h2>
+          <p>Puedes acceder en cualquier momento a las puntuaciones y ver el ranking de las mejores puntuaciones. Para que tus puntuaciones se muestren en el ranking tienes que acceder a tu perfil antes de comenzar el juego.</p>
+        </div>
+    </div>
   </div>
 </div>
