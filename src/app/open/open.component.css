@@ -16,29 +16,29 @@ h3{
 }
 
 .presentacion{
-    padding-left:20%;
-    padding-right: 20%;
+    /*padding-left:20%;
+    padding-right: 20%;*/
 
 }
 
-.carta{
+/*.carta{
     float:left;
     padding:30px;
     text-align: center;
-}
+}*/
 
 .sombra:hover img{
     opacity: 0.6;
     transition:1s; 
 }
 
-.row:after{
+/*.row:after{
     clear: both;
-}
+}*/
 
-img{
+/*img{
     border-radius: 10px;
-}
+}*/
 
 a{
     text-decoration: none;

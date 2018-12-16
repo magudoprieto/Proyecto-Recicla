@@ -3,41 +3,50 @@
         <div class="bg-personal">
             <router-outlet></router-outlet>
         </div>
-        <h3>Elige uno de nuestros juegos</h3>
-        <div class="presentacion row">
-                <div class="carta">
-                    <a [routerLink]="['../colores']">
-                        <div class="sombra"><img src="../../assets/images/colores.jpg"/></div>
-                        <h5>Colores</h5>
-                    </a>
-                </div>
-            <div class="carta">
+        <h3>Mini-juegos</h3>
+
+        
+        <div class="row">
+            <div class="col-12 col-xs-6 col-md-6 col-lg-4">
+                <a [routerLink]="['../colores']">
+                    <div class="sombra p-5">
+                        <img class="img-fluid" src="../../assets/images/trash-truck.png"/>
+                    </div>
+                    <h5 class="text-center">Los contenedores</h5>
+                </a>
+            </div>
+            <div class="col-12 col-xs-6 col-md-6 col-lg-4">
                 <a [routerLink]="['../trivial']">
-                <div class="sombra"><img src="../../assets/images/trivial.jpg"/></div>
-                <h5>Trivial</h5>
+                    <div class="sombra p-5">
+                        <img class="img-fluid" src="../../assets/images/trivial.png"/>
+                    </div>
+                <h5 class="text-center">Trivial</h5>
                 </a>
             </div>
-            <div class="carta">
+            <div class="col-12 col-xs-6 col-md-6 col-lg-4">
                 <a [routerLink]="['../reciclatu']">
-                    <div class="sombra"><img src="../../assets/images/reciclatu.jpg"/></div>
-                <h5>Reciclatu</h5>
+                    <div class="sombra p-5">
+                        <img class="img-fluid" src="../../assets/images/reciclar-signo.png"/>
+                    </div>
+                <h5 class="text-center">Reciclatu</h5>
                 </a>
             </div>
-            <div class="carta">
-                <div class="sombra"><img src="../../assets/images/proximamente.jpg"/></div>
-                <h5>Titulo</h5>
+            <div class="col-12 col-xs-6 col-md-6 col-lg-4">
+                <div class="sombra p-5">
+                    <img class="img-fluid" src="../../assets/images/mundo.png"/>
+                </div>
+                <h5 class="text-center">Cuida del mundo</h5>
             </div>
-            <div class="carta">
-                <div class="sombra"><img src="../../assets/images/proximamente.jpg"/></div>
-                <h5>Titulo</h5>
-            </div>
-            <div class="carta">
-                <div class="sombra"><img src="../../assets/images/proximamente.jpg"/></div>
-                <h5>Titulo</h5>
+            <div class="col-12 col-xs-6 col-md-6 col-lg-4">
+                <div class="sombra p-5">
+                    <img class="img-fluid" src="../../assets/images/agua.png"/>
+                </div>
+                <h5 class="text-center">Pescando residuos</h5>
             </div>
             
 
         </div>
+        
        
 
     </div>
