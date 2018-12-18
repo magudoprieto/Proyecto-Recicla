@@ -36,9 +36,9 @@ export class RegisterComponent implements OnInit {
 
   usuarioRegistrado(values){
    //En este método hay que ordenar al servicio que envie los datos de form al servicio.
-    console.log(values);
+    //console.log(values);
     this.peticionesService.nuevoUsuario(values).then((res)=>{
-      console.log(res.json());
+      //console.log(res.json());
       const response = res.json();
       if(response.error){
         alert(response.error);
