@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl,Validators } from '@angular/forms';
 import { PeticionesService } from '../peticiones.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +13,8 @@ export class RegisterComponent implements OnInit {
   form:FormGroup;
   usuarios:any[];
 
-  constructor(private peticionesService: PeticionesService) {
+  constructor(private peticionesService: PeticionesService,
+              private router:Router) {
     this.form = new FormGroup({
         email: new FormControl('',[Validators.required,Validators.email,Validators.maxLength(40)]),
         
@@ -43,6 +45,8 @@ export class RegisterComponent implements OnInit {
       }
      
     });
+    //con la siguiente instrucción redireccionamos a la oag de creación de usuario
+    this.router.navigate(['usuario']);
   }
 
 }

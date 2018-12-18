@@ -10,6 +10,7 @@ import { InfoContenedoresComponent } from './info-contenedores/info-contenedores
 import { TrivialComponent } from './trivial/trivial.component';
 import { ReciclatuComponent } from './reciclatu/reciclatu.component';
 import { PuntuacionComponent } from './puntuacion/puntuacion.component';
+import { PanelregComponent } from './panelreg/panelreg.component';
 
 
 //This is my case 
@@ -25,9 +26,8 @@ const routes: Routes = [
   { path: 'reciclatu',component: ReciclatuComponent },
   { path: 'proyecto', component:ProyectoComponent },
   { path: 'registro', component:RegisterComponent },
-  {path: 'proyecto', component:ProyectoComponent},
-  { path: 'registro', component: RegisterComponent },
   { path: 'puntuacion', component: PuntuacionComponent },
+  { path: 'usuario', component: PanelregComponent },
   { path: '**',pathMatch: 'full',redirectTo: 'home' }
 
 ];
