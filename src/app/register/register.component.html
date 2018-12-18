@@ -8,58 +8,107 @@
       Completa este sencillo formulario, y disfruta aprendiendo mientras juegas, buenos hábitos de reciclaje.
     </p>
 
-    <div class="formulario bg-personal">
+    <div class="formulario border border-primary p-3 mb-4">
       <form [formGroup]="form"
       (ngSubmit)="usuarioRegistrado(form.value)">
         <div class="form-row">
           <div class="form-group col-md-6">
             <!--mail-->
-            <label for="inputEmail4" class="text-light">Correo electrónico</label>
+            <label for="inputEmail4" class="text-dark">Correo electrónico</label>
             <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="example@mail.com" formControlName="email">
           </div>
           <div class="form-group col-md-6">
             <!--contraseña-->
-            <label for="inputPassword4" class="text-light">Contraseña</label>
+            <label for="inputPassword4" class="text-dark">Contraseña</label>
             <input type="password" name="contrasena" class="form-control" id="inputPassword4" placeholder="Password" formControlName="contrasena">
           </div>
         </div>
        <div class="form-row">
         <div class="form-group col-md-6">
           <!--nombre-->
-          <label for="username" class="text-light">Nombre de usuario</label>
+          <label for="username" class="text-dark">Nombre de usuario</label>
           <input type="text" name="nombre" class="form-control" id="username" formControlName="nombre">
         </div>
         <div class="form-group col-md-6">
           <!--edad-->
-          <label for="edad" class="text-light">Edad</label>
+          <label for="edad" class="text-dark">Edad</label>
           <input type="text" name="edad" class="form-control" id="edad" formControlName="edad">
         </div>
       </div>
         <div class="form-row mb-3">
           <div class="form-group col-md-6">
             <!--municipio-->
-            <label for="inputCity" class="text-light">Municipio</label>
+            <label for="inputCity" class="text-dark">Municipio</label>
             <input type="text" name="municipio" class="form-control" id="inputCity" formControlName="municipio">
           </div>
           <div class="form-group col-md-4">
             <!--provincia-->
-            <label for="inputState" class="text-light">Provincia</label>
+            <label for="inputState" class="text-dark">Provincia</label>
             <select name="provincia" id="inputState" class="form-control" formControlName="provincia">
-              <option selected>Elige</option>
+              <option selected>Elige...</option>
               <option>Alaba</option>
               <option>Alicante</option>
+              <option>Albacete</option>
+              <option>Almeria</option>
+              <option>Asturias</option>
+              <option>Ávila</option>
+              <option>Badajoz</option>
+              <option>Barcelona</option>
+              <option>Burgos</option>
+              <option>Cáceres</option>
+              <option>Cádiz</option>
+              <option>Cantabria</option>
+              <option>Castellón</option>
+              <option>Ciudad Real</option>
+              <option>Córdoba</option>
+              <option>Cuenca</option>
+              <option>Gerona</option>
+              <option>Granada</option>
+              <option>Guadalajara</option>
+              <option>Guipúzcua</option>
+              <option>Huelva</option>
+              <option>Huesca</option>
+              <option>Islas Baleares</option>
+              <option>Jaén</option>
+              <option>La Rioja</option>
+              <option>La Coruña</option>
+              <option>Las Palmas</option>
+              <option>León</option>
+              <option>Lérida</option>
+              <option>Lugo</option>
               <option>Madrid</option>
+              <option>Málaga</option>
+              <option>Murcia</option>
+              <option>Navarra</option>
+              <option>Ourense</option>
+              <option>Palencia</option>
+              <option>Pontevedra</option>
+              <option>Salamanca</option>
+              <option>Segovia</option>
+              <option>Sevilla</option>
+              <option>Soria</option>
+              <option>Tarragona</option>
+              <option>Tenerife</option>
+              <option>Teruel</option>
+              <option>Toledo</option>
+              <option>Valencia</option>
+              <option>Valladolid</option>
+              <option>Vizcaya</option>
+              <option>Zamora</option>
+              <option>Zaragoza</option>
+
+
               
             </select>
           </div>
           <div class="form-group col-md-2">
             <!--codigo postal-->
-            <label for="inputZip" class="text-light">Código Postal</label>
+            <label for="inputZip" class="text-dark">Código Postal</label>
             <input type="text" name="postal" class="form-control" id="inputZip" formControlName="postal">
           </div>
             <!--Curso-->
             <div class="col-md-3">
-              <label for="curso" class="text-light">Curso</label>
+              <label for="curso" class="text-dark">Curso</label>
               <select class="form-control" formControlName="curso">
                 <option>Selecciona...</option>
                 <option>1º Primaria</option>
@@ -84,7 +133,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-light" value="enviar" [disabled]="!form.valid">Enviar</button>
+        <button type="submit" class="btn btn-outline-dark" value="enviar" [disabled]="!form.valid">Enviar</button>
       </form>
     </div>
   </div>
