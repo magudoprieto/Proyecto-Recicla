@@ -48,14 +48,14 @@ export const PREGUNTAS: Pregunta[] = [
         },
         {
           id:4,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: 'Acabas de usar una toallita de limpieza facial ¿Donde la puedes tirar?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'A la taza del retrete.',
+            'Al contenedor amarillo.',
+            'Al cubo del cristal.',
+            'Al contenedor de resto de residuos orgánicos.'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contenedor de resto de residuos orgánicos.'
         },
         {
           id:5,
