@@ -33,6 +33,11 @@ p{
     padding: 2%;
 }
 
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
 
     
 
