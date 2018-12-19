@@ -70,7 +70,7 @@ export const PREGUNTAS: Pregunta[] = [
         },
         {
           id:6,
-          texto: '¿Dónde debes tirar el bote pintura de tus acuarelas?',
+          texto: '¿Dónde debes tirar el bote de pintura de tus acuarelas?',
           respuestas: [
             'Al contenedor marrón',
             'Al contenedor amarillo',
