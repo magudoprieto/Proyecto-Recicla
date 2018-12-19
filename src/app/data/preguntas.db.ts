@@ -33,7 +33,7 @@ export const PREGUNTAS: Pregunta[] = [
             'El contenedor de residuos orgánicos junto con el palito.',
             'Ante un residuo tan peligroso lo mejor es llevarlo al punto limpio.'
           ],
-          respCorrecta: 'Lo tiro a la papelera o a un contenedor amarillo.'
+          respCorrecta: 'Al contenedor amarillo.'
         },
         {
           id:3,
@@ -52,65 +52,65 @@ export const PREGUNTAS: Pregunta[] = [
           respuestas: [
             'A la taza del retrete.',
             'Al contenedor amarillo.',
-            'Al cubo del cristal.',
-            'Al contenedor de resto de residuos orgánicos.'
+            'Al contenedor de resto de residuos orgánicos.',
+            'Al contenedor de otros residuos (el naranja).'
           ],
-          respCorrecta: 'Al contenedor de resto de residuos orgánicos.'
+          respCorrecta: 'Al contenedor de otros residuos (el naranja).'
         },
         {
           id:5,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: '¿Qué debes hacer con el papel de aluminio que envolvía tu bocadillo?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'Al contenedor de papel y cartón',
+            '¡Al punto limpio cuanto antes!',
+            'Al contendor amarillo',
+            'Al contenedor de vídrio'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contendor amarillo'
         },
         {
           id:6,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: '¿Dónde debes tirar el bote pintura de tus acuarelas?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'Al contenedor marrón',
+            'Al contenedor amarillo',
+            'Lo tiras a la puerta del cole',
+            'Al contenedor verde'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contenedor amarillo'
         },
         {
           id:7,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: 'Has cenado pizza, ¿dónde tiramos la caja de la pizza?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'Al contendor de plásticos y latas',
+            'Al contenedor azul',
+            'Al punto limpio lo antes posible',
+            'Se lo devuelves al pizzero'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contenedor azul'
         },
         {
           id:8,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: 'Se te acaba la tinta del bolígrafo ¿dónde lo tienes que tirar?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'En el punto limpio',
+            'Al contendor azul',
+            'Al contenedor amarillo',
+            'Al contenedor de otros residuos'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contenedor de otros residuos'
         },
         {
           id:9,
-          texto: 'Si en el bolsillo tienes 3 canicas, te regalan 2 más y pierdes 4. ¿Cuántas canicas tienes?',
+          texto: 'Acabas de comer tu plato favorito, ¿dónde debes tirar la servilleta que has utilizado?',
           respuestas: [
-            '9',
-            '17',
-            '4',
-            '1'
+            'Al contenedor marrón',
+            'Al contenedor azul',
+            'Al contenedor amarillo',
+            'Al contenedor verde'
           ],
-          respCorrecta: '1'
+          respCorrecta: 'Al contenedor marrón'
         }
   
 ]
