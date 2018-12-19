@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Contenedore } from '../model/contenedore.model';
 import { ContenedoresService } from '../contenedores.service';
+import { Router } from '@angular/router';
+import { UserServiceService } from '../user-service.service';
+import { PeticionesService } from '../peticiones.service';
 
 @Component({
   selector: 'app-reciclatu',
@@ -13,16 +16,21 @@ export class ReciclatuComponent implements OnInit {
   residuos:any[];
   contenedor: any;
   residuo:any;
-
   acierto: string;
-
   contador:number;
+  fin:boolean;
+  usuario:string;
 
-  constructor(private preguntasService:ContenedoresService) {
+  constructor(private preguntasService:ContenedoresService,
+              private router:Router,
+              private user:UserServiceService,
+              private peticionesService:PeticionesService) {
   this.contenedores = this.preguntasService.getContenedores();
    this.residuos = this.preguntasService.getResiduos();
    this.acierto = '';
    this.contador = 0;
+   this.fin = false;
+   this.usuario = JSON.parse(localStorage.getItem("usuario")).id
    
    }
 
@@ -71,14 +79,24 @@ export class ReciclatuComponent implements OnInit {
 
       if(this.residuos.length == 0){
         console.log('el juego ha terminado');
+        this.fin = true;
       }
   }
 
   rutaOpen(){
-    //peticion para insertar puntuación en base de datos
+    let datosNode = {
+      puntos: this.contador,
+      id_juego: 3,
+      id_usuario: this.usuario
+    }
+
+    this.peticionesService.agregarPartidas(datosNode).then((res)=>{
+
+    });
+    
     //Reinicializar el array residuos
-    //Reinicializar el contador de puntos
-    //this.router.navigate(['/open']);
+    this.contador = 0;
+    this.router.navigate(['/open']);
   }
 
 
