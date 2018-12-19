@@ -28,7 +28,7 @@ export const PREGUNTAS: Pregunta[] = [
           id:2,
           texto: 'Te acabas de comer un helado y no sabes que hacer con su envoltorio.',
           respuestas: [
-            'Lo tiro a la papelera o a un contenedor amarillo.',
+            'Al contenedor amarillo.',
             'Si no está mirando nadie lo puedo tirar al suelo.',
             'El contenedor de residuos orgánicos junto con el palito.',
             'Ante un residuo tan peligroso lo mejor es llevarlo al punto limpio.'
