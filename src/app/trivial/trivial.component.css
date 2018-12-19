@@ -9,13 +9,16 @@
     cursor: pointer;
 }
 
+.bg{
+    background-color: rgb(190, 109, 51);
+}
 
 .containerDos{
     position: fixed;
     width: 100%;
     min-height: 600px;
     height: 100%;
-    background-color: black;
+    background-color: #4FB99F;
     top:0px;
     left: 0px;
 }

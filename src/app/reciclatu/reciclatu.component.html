@@ -1,16 +1,16 @@
 <div class="canvas container-fluid m-0">
   
-  <div class="container bg-dark text-light">
+  <div class="container bg text-light">
 
       <div class="row alturaMarcadores">
   
         <div class="marcador col-12 col-md-6 text-center mt-0">
           <p> </p>
-          <p *ngIf="acierto == 'true'">¡Enhorabuena! Has acertado.</p>
-          <p *ngIf="acierto == 'false'">Lo siento mucho. Te has equivocado.</p>
+          <p *ngIf="acierto == 'true'" class="text-dark">¡Enhorabuena! Has acertado.</p>
+          <p *ngIf="acierto == 'false'" class="text-dark">Lo siento mucho. Te has equivocado.</p>
         </div>
         <div class="puntos col-12 col-md-6 text-center pt-3">
-          <p>Tu puntuación es: {{contador}}</p>
+          <p class="text-dark">Tu puntuación es: {{contador}}</p>
         </div>
       </div>
         <!--Contenedores-->
